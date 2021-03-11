@@ -1,0 +1,84 @@
+body {
+	margin: auto;
+	text-align: center;
+	padding: 0;
+	background-image: url("/static/Artificial-Intelligence.jpg");
+	background-color: aliceblue;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+div.Main {
+	position: relative;
+	background-color: #8ebfed;
+	margin: 0 auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	height: 50%;
+	width: 60%;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#back_button {
+	opacity: 0.7;
+}
+
+	#back_button:hover {
+		opacity: 1;
+	}
+
+#GoBackText {
+	text-shadow: 0 0 5px white;
+}
+
+div.gallery {
+	margin: 5px;
+	border: 3px solid #ccc;
+	border-radius: 3px;
+	float: left;
+	width: 23%;
+	background-color: azure;
+}
+
+	div.gallery img {
+		opacity: 0.8;
+		width: 100%;
+		height: auto;
+		background-color: azure;
+	}
+
+		div.gallery img:hover {
+			opacity: 1;
+		}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+
+.file_input_class {
+	display: none;
+}
+
+.submission_class {
+	display: none;
+}
+
+.submission_label_class {
+	font-family: Modern;
+	border: 1px solid #ccc;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: aquamarine;
+	background-image: linear-gradient(#51c2e8, #436fe6);
+	height: auto;
+	width: 70%;
+	cursor: pointer;
+	border: 2px solid #42f5f5;
+}
+
+	.submission_label_class:hover {
+		text-shadow: 0 0 2px white;
+		box-shadow: 0 0 5px #7c4dff;
+	}

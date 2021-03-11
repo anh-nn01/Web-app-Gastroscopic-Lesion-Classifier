@@ -1,0 +1,49 @@
+@import url(//db.onlinewebfonts.com/c/35a768989afa388e3b0d48f0d5aea890?family=First+In+Line);
+
+@font-face {
+    font-family: Modern;
+    src: url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.eot");
+    src: url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.woff") format("woff"), url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.svg#First In Line") format("svg");
+}
+
+body {
+    margin: auto;
+    text-align: center;
+    text-align: center;
+    padding: 0;
+    background-image: url("/static/Artificial-Intelligence.jpg");
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Main {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#back_button {
+    opacity: 0.8;
+}
+
+#back_button:hover {
+    opacity: 1  ;
+}
+
+#display_img {
+    border: 1px solid #ddd;
+    border-radius: 8 px;
+    box-shadow: 0 0 4px #7c4dff;
+}
+
+input[type=text], select {
+    width: 4%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+

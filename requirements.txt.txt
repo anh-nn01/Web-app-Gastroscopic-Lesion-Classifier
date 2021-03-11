@@ -1,0 +1,8 @@
+opencv_python==4.2.0.34
+torch==1.6.0
+Flask==1.1.1
+torchvision==0.7.0
+numpy==1.16.5
+Werkzeug==0.16.0
+Pillow==8.1.2
+gunicorn==20.0.4

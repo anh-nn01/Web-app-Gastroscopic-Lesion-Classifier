@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> VT-Med Endoscopy Gastric Classification </title>
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/investigate.css') }}">
+</head>
+
+
+<body>
+    <script>
+        // Get (x,y) coordinates from the onclick event
+        function get_coords(event) {
+            let x = event.clientX - document.getElementById("display_img").offsetLeft;
+            let y = event.clientY - document.getElementById("display_img").offsetTop;
+
+            document.coordinates_form.form_x.value = x
+            document.coordinates_form.form_y.value = y
+
+            // alert("x: " + x + ", " + "y: " + y)
+        }
+    </script>
+
+    <!-- DISPLAY UPLOADED IMAGE -->
+    <div style="margin-top: 1%;" class="Main">
+        <form action="/" , method="get">
+            <input type="image" id="back_button" src="/static/BackButton2.png" style="border-radius: 8px;" height="70px" width="70px">
+        </form>     
+        <b style="color: white;">Go Back to Main Menu</b>
+        <br>
+
+        <p style="
+        text-align: center;
+        background-color:antiquewhite;
+        color: #ff0d0d;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 5px;"
+            <b><u>Click on the image to select patch and classify gastric lesion type</b></u>
+        </p>
+        
+        <!-- Define POST fields -->
+        <form action="/classify" name="coordinates_form" method="post">
+            <!-- Image Source -->
+            <p style="text-align: center">
+                <input type="image" src="{{ image_backend }}" id="display_img"
+                     onclick="get_coords(event)"/>
+            </p>
+
+            <!-- Coordinates -->
+            <input type="text" name="form_x" id="form_x" style="display: none;">
+            <input type="text" name="form_y" id="form_y" style="display: none;">
+        </form>
+        <br>
+    </div>
+</body>
+</html>

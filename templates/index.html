@@ -1,0 +1,58 @@
+<!-- <!doctype html>
+<title>Test Gastroscopic Classification</title>
+<br><br><h2 align="center">SELECT AN ENDOSCOPY IMAGE</h2><br><br>
+<p align="center"><a href = RunTest ><button class=grey style="height:75px;width:150px">Choose Image</button></a></p> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> VT-Med Endoscopy Gastric Classification </title>
+    
+    <link href="//db.onlinewebfonts.com/c/35a768989afa388e3b0d48f0d5aea890?family=First+In+Line" rel="stylesheet" type="text/css" />
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+      <div class="Content">
+          <div class="Main">
+              <h1 style="font-family: Modern; font-size: 50px; color: dimgray">
+                  <br> AI  Gastric  Endoscopic  Classification <br>
+              </h1>
+
+              <!-- Upload Files -->
+              <form action="/upload" method="POST" enctype="multipart/form-data">
+                  <!-- Input field-->
+                  <label for="file_input_id" class="file_input_label_class"> <p style=" color: white; font-family: Optima"> Upload Endoscopy Image </p> </label>
+                  <input class="file_input_class" id="file_input_id" type="file" accept="image/*" name="file_input" onchange="display_file(event)">
+                  <br><br>
+                  <label for="submission_id" class="submission_label_class"> <p style=" color: white; font-family: Optima"> Patch Classification </p> </label>
+                  <input class="submission_class" id="submission_id" type="submit">
+              </form>
+
+              <p style="color: royalblue; font-size:large; "> <b>OR</b></p>
+
+              <!-- Choose from Image Gallery -->
+              <form action="/gallery">
+                  <label for="gallery_id" class="gallery_label_class"> <p style=" color: white; font-family: Optima"> Download Sample Image </p> </label>
+                  <input class="gallery_class" id="gallery_id" type="submit"">
+              </form>
+              <br><br>
+
+              <script>
+                  // Display uploaded image on the browser
+                  let display_file = function (event) {
+                      let img = document.getElementById("display_img");
+                      img.src = URL.createObjectURL(event.target.files[0]);
+                  }
+              </script>
+
+          </div>
+      </div>
+
+      <!-- DISPLAY UPLOADED IMAGE -->
+      <p style="text-align: center">
+          <img src="{{ image_backend }}" id="display_img" padding: 5px style="max-height: 448px"/>
+      </p>
+  </body>
+</html>
