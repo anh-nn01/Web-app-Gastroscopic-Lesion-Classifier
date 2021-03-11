@@ -1,7 +1,8 @@
-numpy==1.16.5
 Werkzeug==0.16.0
-Flask==1.1.1
-https://s3.amazonaws.com/pytorch/whl/cu75/torch-0.1.6.post22-cp27-none-linux_x86_64.whl
 opencv_python==4.2.0.34
+Flask==1.1.1
+torch-cpu
+torchvision-cpu
+numpy==1.16.5
 Pillow==8.1.2
 gunicorn==20.0.4
