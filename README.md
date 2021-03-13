@@ -4,7 +4,7 @@ A patch-based Gastroscopic Classifier web app with Python backend using Flask mi
 # Application
 * Assist Medical Doctors to classify gastric lesion types based on small selected patch on an endoscopy image.
 * 6 Lesion types: Active Gastritis, Atrophic Gastritis, Chronic Gastritis, Intestinal Metaplasia, Normal, Ulcer.
-<br><br><b>Sample Gastroscopic Images:</b> <br>
+<br><br><h2>Sample Gastroscopic Images:</h2> <br>
 <img src="/static/sample_images/7.png" height="300"> <img src="/static/sample_images/2.png" height="300">
 <img src="/static/sample_images/12.png" height="300"> <img src="/static/sample_images/1.png" height="300">
 
