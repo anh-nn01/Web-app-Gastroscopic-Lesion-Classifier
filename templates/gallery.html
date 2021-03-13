@@ -6,13 +6,13 @@
     <title> VT-Med Endoscopy Gastric Gallery </title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/gallery.css') }}">
 </head>
-<body>
+<body> 
     <div class="Main">
         <!-- Go Back Button -->
         <form action="/" , method="get">
             <input type="image" id="back_button" src="/static/BackButton2.png" style="border-radius: 8px;" height="70px" width="70px">
         </form>
-        <b style="color: rgb(43, 148, 233);" id="GoBackText">Go Back to Main Menu</b>
+        <b style="color: rgb(240, 240, 240);" id="GoBackText">Go Back to Main Menu</b>
         <br><br>
 
 
@@ -101,6 +101,24 @@
         <div class="gallery">
             <img src="/static/sample_images/10.png" alt="Sample_10">
             <a href="/static/sample_images/10.png" target="_blank" style="text-decoration: none">
+                <label for="submission_id" class="submission_label_class">
+                    <b style=" color: white; font-family: Optima"> SELECT </b>
+                </label>
+            </a><br>
+        </div>
+
+        <div class="gallery">
+            <img src="/static/sample_images/11.png" alt="Sample_11">
+            <a href="/static/sample_images/11.png" target="_blank" style="text-decoration: none">
+                <label for="submission_id" class="submission_label_class">
+                    <b style=" color: white; font-family: Optima"> SELECT </b>
+                </label>
+            </a><br>
+        </div>
+
+        <div class="gallery">
+            <img src="/static/sample_images/12.png" alt="Sample_12">
+            <a href="/static/sample_images/12.png" target="_blank" style="text-decoration: none">
                 <label for="submission_id" class="submission_label_class">
                     <b style=" color: white; font-family: Optima"> SELECT </b>
                 </label>

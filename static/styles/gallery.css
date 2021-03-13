@@ -1,16 +1,13 @@
-body {
-	margin: auto;
-	text-align: center;
-	padding: 0;
-	background-image: url("/static/Artificial-Intelligence.jpg");
-	background-color: aliceblue;
-	background-repeat: no-repeat;
-	background-position: center center;
+html{
+    background: url("/static/Artificial-Intelligence.jpg");
+    background-size: cover;
+    height: 100%;
+    overflow: scroll;
 }
 
 div.Main {
 	position: relative;
-	background-color: #8ebfed;
+	background-color: #2c85da;
 	margin: 0 auto;
 	margin-top: 2%;
 	margin-bottom: 2%;

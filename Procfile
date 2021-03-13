@@ -1,1 +1,1 @@
-web: gunicorn -b :$PORT Main:app --log-level debug
+web: gunicorn Main:app --log-file=-

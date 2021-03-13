@@ -1,3 +1,6 @@
+/*
+    Title Font Face
+*/
 @import url(//db.onlinewebfonts.com/c/35a768989afa388e3b0d48f0d5aea890?family=First+In+Line);
 
 @font-face {
@@ -6,23 +9,22 @@
     src: url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.woff") format("woff"), url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.svg#First In Line") format("svg");
 }
 
+/*
+    Button Font Face
+*/
+@import url(//db.onlinewebfonts.com/c/af1f9cf6d51df55b85e1b496776585c4?family=Brandon+Grotesque+Regular);
+
+@font-face {
+    font-family: Modern-Button; 
+    src: url("//db.onlinewebfonts.com/t/af1f9cf6d51df55b85e1b496776585c4.eot"); src: url("//db.onlinewebfonts.com/t/af1f9cf6d51df55b85e1b496776585c4.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/af1f9cf6d51df55b85e1b496776585c4.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/af1f9cf6d51df55b85e1b496776585c4.woff") format("woff"), url("//db.onlinewebfonts.com/t/af1f9cf6d51df55b85e1b496776585c4.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/af1f9cf6d51df55b85e1b496776585c4.svg#Brandon Grotesque Regular") format("svg"); 
+}
 
 
-body {
-    background-image: url("/static/Artificial-Intelligence.jpg");
-    background-color: aliceblue;
-    background-repeat: no-repeat;
-    background-position: center center;
+html{
+    background: url("/static/Artificial-Intelligence.jpg");
     background-size: cover;
-    margin: auto;
-    text-align:center;
-    padding: 0;
-
-    animation-duration: 1.5s; /* the duration of the animation */
-    animation-timing-function: ease-out; /* how the animation will behave */
-    animation-delay: 0s; /* how long to delay the animation from starting */
-    animation-iteration-count: 1; /* how many times the animation will play */
-    animation-name: gradualVisible;
+    height: 100%;
+    overflow: scroll;
 }
 
 /*
@@ -96,6 +98,7 @@ input {
     animation-delay: 0s; /* how long to delay the animation from starting */
     animation-iteration-count: 1; /* how many times the animation will play */
     animation-name: gradualVisible;
+    max-height: 400px;
 }
 
 #misc {
@@ -115,7 +118,7 @@ input {
     background-color: aquamarine;
     background-image: linear-gradient(#51c2e8, #9d51e8);
     height: 20%;
-    width: 40%;
+    width: 35%; 
     cursor: pointer;
     border: 2px solid #42f5f5;
 }
@@ -137,7 +140,7 @@ input {
     background-color: aquamarine;
     background-image: linear-gradient(#51c2e8, #9d51e8);
     height: 20%;
-    width: 40%;
+    width: 35%;
     cursor: pointer;
     border: 2px solid #42f5f5;
 }
@@ -160,51 +163,7 @@ input {
     background-color: aquamarine;
     background-image: linear-gradient(#51c2e8, #9d51e8);
     height: 20%;
-    width: 40%;
-    cursor: pointer;
-    border: 2px solid #42f5f5;
-}
-
-.gallery_label_class:hover {
-    text-shadow: 0 0 3px #fff;
-    box-shadow: 0 0 5px #7c4dff;
-}
-
-.gallery_class {
-    display: none;
-}
-
-.gallery_label_class {
-    font-family: Modern;
-    border: 1px solid #ccc;
-    display: inline-block;
-    border-radius: 10px;
-    background-color: aquamarine;
-    background-image: linear-gradient(#51c2e8, #9d51e8);
-    height: 20%;
-    width: 40%;
-    cursor: pointer;
-    border: 2px solid #42f5f5;
-}
-
-.gallery_label_class:hover {
-    text-shadow: 0 0 3px #fff;
-    box-shadow: 0 0 5px #7c4dff;
-}
-
-.gallery_class {
-    display: none;
-}
-
-.gallery_label_class {
-    font-family: Modern;
-    border: 1px solid #ccc;
-    display: inline-block;
-    border-radius: 10px;
-    background-color: aquamarine;
-    background-image: linear-gradient(#51c2e8, #9d51e8);
-    height: 20%;
-    width: 40%;
+    width: 35%;
     cursor: pointer;
     border: 2px solid #42f5f5;
 }

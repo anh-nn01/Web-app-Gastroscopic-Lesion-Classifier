@@ -20,21 +20,30 @@
                   <br> AI  Gastric  Endoscopic  Classification <br>
               </h1>
 
+              <script>
+                  function check_upload(){
+                      if(document.getElementById("file_input_id").files.length == 0){
+                          alert("*You must upload an image before selecting 'Patch Classification'!");
+                      }
+                  }
+              </script>
+
+              <p id="warning_box" style="color: red;"></p>
               <!-- Upload Files -->
               <form action="/upload" method="POST" enctype="multipart/form-data">
                   <!-- Input field-->
-                  <label for="file_input_id" class="file_input_label_class"> <p style=" color: white; font-family: Optima"> Upload Endoscopy Image </p> </label>
+                  <label for="file_input_id" class="file_input_label_class"> <p style=" color: white; font-family: Modern-Button"> <b>Upload Endoscopy Image</b> </p> </label>
                   <input class="file_input_class" id="file_input_id" type="file" accept="image/*" name="file_input" onchange="display_file(event)">
                   <br><br>
-                  <label for="submission_id" class="submission_label_class"> <p style=" color: white; font-family: Optima"> Patch Classification </p> </label>
-                  <input class="submission_class" id="submission_id" type="submit">
+                  <label for="submission_id" class="submission_label_class"> <p style=" color: white; font-family: Modern-Button"> <b> Patch Classification</b> </p> </label>
+                  <input class="submission_class" id="submission_id" type="submit" onclick="check_upload()">
               </form>
 
               <p style="color: royalblue; font-size:large; "> <b>OR</b></p>
 
               <!-- Choose from Image Gallery -->
               <form action="/gallery">
-                  <label for="gallery_id" class="gallery_label_class"> <p style=" color: white; font-family: Optima"> Download Sample Image </p> </label>
+                  <label for="gallery_id" class="gallery_label_class"> <p style=" color: white; font-family: Modern-Button"> <b>Download Sample Images</b> </p> </label>
                   <input class="gallery_class" id="gallery_id" type="submit"">
               </form>
               <br><br>
@@ -52,7 +61,7 @@
 
       <!-- DISPLAY UPLOADED IMAGE -->
       <p style="text-align: center">
-          <img src="{{ image_backend }}" id="display_img" padding: 5px style="max-height: 448px"/>
+          <img src="{{ image_backend }}" id="display_img" padding: 5px/>
       </p>
   </body>
 </html>

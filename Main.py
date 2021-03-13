@@ -50,7 +50,7 @@ def upload_page():
             return render_template("investigate.html", image_backend = upload_dir)
 
         except Exception as e:
-            return (str(e))
+            return redirect("/")
     return redirect("/")
 
 """
@@ -117,5 +117,5 @@ def about():
 
 
 if(__name__ == "__main__"):
-    port = int(os.environ.get('PORT', 8000))
-    app.run(host='0.0.0.0', debug=True, port=port)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)  

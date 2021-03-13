@@ -6,19 +6,17 @@
     src: url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.woff") format("woff"), url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/35a768989afa388e3b0d48f0d5aea890.svg#First In Line") format("svg");
 }
 
-body {
-    margin: auto;
-    text-align: center;
-    text-align: center;
-    padding: 0;
-    background-image: url("/static/Artificial-Intelligence.jpg");
-    background-color: aliceblue;
-    background-repeat: no-repeat;
+html{
+    background: url("/static/Artificial-Intelligence.jpg");
     background-size: cover;
+    height: 100%;
+    overflow: scroll;
 }
 
 .Main {
     position: relative;
+    text-align: center;
+    margin: 0 auto;
     margin-right: auto;
     margin-left: auto;
 }
