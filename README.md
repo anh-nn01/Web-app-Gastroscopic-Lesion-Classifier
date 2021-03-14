@@ -9,6 +9,15 @@ A patch-based Gastroscopic Classifier web app with Python backend using Flask mi
 <img src="/static/sample_images/12.png" height="300"> <img src="/static/sample_images/1.png" height="300">
 
 # UI (User Interface)
+Main screen<br>
+<img src="screen-1.jpg" width=800>
+
+Lesion classification<br>
+<img src="screen-normal.jpg" width=800>
+<img src="screen-ulcer.jpg" width=800>
+
+Sample page<br>
+<img src="screen-sample.jpg" width=800>
 
 # Dataset
 * 6-class gastroscopic dataset provided by CNRS (French National Centre for Scientific Research) and 108 Military Central Hospital.
@@ -20,7 +29,8 @@ A patch-based Gastroscopic Classifier web app with Python backend using Flask mi
 * Regularization technique: Dropout with **p=0.2**.
 <br>
 <h2>Sample Patch</h2>
-<img src="patch1.png" height="112"> <img src="patch2.png" height="112"> <img src="patch3.png" height="112"> <img src="patch4.png" height="112">
+<img src="patch1.png" height="112"> <img src="patch2.png" height="112">
+<img src="patch3.png" height="112"> <img src="patch4.png" height="112">
 
 # Technology used
 * Backend Language: Python 3.8
