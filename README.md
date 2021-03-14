@@ -20,7 +20,7 @@ A patch-based Gastroscopic Classifier web app with Python backend using Flask mi
 * Regularization technique: Dropout with **p=0.2**.
 <br>
 <h2>Sample Patch</h2>
-<img src="patch1.png" height="112"><img src="patch2.png" height="112"><img src="patch3.png" height="112"><img src="patch4.png" height="112">
+<img src="patch1.png" height="112"> <img src="patch2.png" height="112"> <img src="patch3.png" height="112"> <img src="patch4.png" height="112">
 
 # Technology used
 * Backend Language: Python 3.8
