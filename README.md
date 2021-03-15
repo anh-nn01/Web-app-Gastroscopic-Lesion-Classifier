@@ -1,6 +1,6 @@
 # Web-app-Gastroscopic-Classifier
 A patch-based Gastroscopic Classifier web app with Python backend using Flask micro-framework and PyTorch modified Resnet-34 Convolutional Neural Network.
-This project was with Viettel Cyberspace Center (VTCC) and CNRS (Centre national de la recherche scientifique).
+<br>This project was with Viettel Cyberspace Center (VTCC) and CNRS (Centre national de la recherche scientifique).
 
 # Application
 * Assist Medical Doctors to classify gastric lesion types based on small selected patch on an endoscopy image.
